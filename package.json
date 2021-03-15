@@ -1,0 +1,14 @@
+{
+  "name": "study-caver-js",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./node_modules/.bin/pm2 start ./bin/www --name study-caver-js",
+    "poststart": "node ./node_modules/.bin/pm2 logs",
+    "apidoc": "apidoc -i ./routes -o ./public/apidoc"
+  },
+  "dependencies": {
+    "caver-js": "^1.5.7",
+    "pm2": "^4.5.5"
+  }
+}
